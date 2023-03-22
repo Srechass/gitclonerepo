@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello gitclonerepo') {
+            steps {
+                echo 'Hello world this is jenkins pipeline'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'Building stage'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'deploying stage'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing stage'
+            }
+        }
+        stage('Release') {
+            steps {
+                echo 'Release stage'
+            }
+        }
+    }
+}
